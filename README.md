@@ -2,4 +2,5 @@
 Python
 
 But du Projet :
-Entrez le code barres du produit et recherchez des informations (prix, nom du produit...)
+Entrez le code barres du produit et recherchez des informations (prix, nom du produit...). 
+Pour ce faire, nous allons programmer sur Python avec des classes et de tester si le programme marche ou pas avec unittest.
