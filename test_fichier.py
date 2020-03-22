@@ -1,1 +1,0 @@
-from ProjetEvaluation import exemple
