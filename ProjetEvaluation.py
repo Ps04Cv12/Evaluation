@@ -1,6 +1,6 @@
 import time
-import unittest
 import pickle
+
 
 class Produit:
     def _init_(self,CodeBarre,NomProduit):
@@ -13,13 +13,21 @@ class Produit:
     def get_NomProduit(self):
         return self.Nom_Produit
     
+    # Si la machine ne connaît pas le code barre
+    # Afficher "Produit introuvable"
+    # Sinon Enregistrer le produit
+
     def set_CodeBarre(self, CodeBarre,NomProduit):
+
         if CodeBarre is None :
           self.Code_Barre = "Produit introuvable"
+          
         else : 
           self.Code_Barre = NomProduit
-          pickle.load(self.Nom_Produit) # Enregistrer le Produit
-        
+          
+        # Enregistrer le Produit
+          pickle.load(self.Nom_Produit) 
+
         # Afficher le nom du produit
           def _str_(self) :
             return "Produit : {}".format(self.Nom_Produit)
