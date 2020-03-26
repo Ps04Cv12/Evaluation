@@ -1,21 +1,20 @@
 import time
 import pickle
 
+CodeBarre = []
 
 class Produit:
     def _init_(self,CodeBarre,NomProduit):
-        self.Code_Barre = CodeBarre
-        self.Nom_Produit = NomProduit
+      self.Code_Barre = CodeBarre
+      self.Nom_Produit = NomProduit
         
     def get_CodeBarre (self):
-        return self.Code_Barre
+      start_time = time.time()
+      print("Temps d'enregistrement : %s secondes ---" % (time.time() - start_time))
+      return self.Code_Barre
     
     def get_NomProduit(self):
-        return self.Nom_Produit
-    
-    # Si la machine ne connaît pas le code barre
-    # Afficher "Produit introuvable"
-    # Sinon Enregistrer le produit
+      return self.Nom_Produit
 
     def set_CodeBarre(self, CodeBarre,NomProduit):
 
@@ -31,5 +30,12 @@ class Produit:
         # Afficher le nom du produit
           def _str_(self) :
             return "Produit : {}".format(self.Nom_Produit)
+
+
+
+  
+
+
+          
 
 
